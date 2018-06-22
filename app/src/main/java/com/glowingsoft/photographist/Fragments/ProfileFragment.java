@@ -26,6 +26,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.glowingsoft.photographist.Activities.AddPortfolioActivity;
 import com.glowingsoft.photographist.Activities.AppActivity;
 import com.glowingsoft.photographist.Activities.MenuActivity;
 import com.glowingsoft.photographist.Activities.SelectionActivity;
@@ -104,7 +105,7 @@ public class ProfileFragment extends ParentFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.layout_profile, container, false);
@@ -155,7 +156,8 @@ public class ProfileFragment extends ParentFragment {
         addPostFAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(context, AddPortfolioActivity.class);
+                startActivity(intent);
             }
         });
         if (VISITOR==0){

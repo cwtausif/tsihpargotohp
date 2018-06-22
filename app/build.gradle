@@ -31,4 +31,6 @@ dependencies {
     implementation 'gun0912.ted:tedpermission:2.0.0'
     implementation 'com.squareup.picasso:picasso:2.3.2'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.github.Gavras:GIFView:v1.2'
+    compile 'com.github.Cutta:GifView:1.1'
 }
